@@ -1,0 +1,28 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{
+setlocale(LC_ALL, "RUS");
+    double a,b,c;
+    cout<<"Введите 3 числа"<<endl;
+    cin>>a>>b>>c;
+    if(a>b&&b>c||a<b&&b<c){
+        a=a*2;
+        b=b*2;
+        c=c*2;
+      cout<<a<<" "<<b<<" "<<c ;
+    }
+    else{
+
+    a=-a;
+    b=-b;
+    c=-c;
+    cout<<a<<" "<<b<<" "<<c;
+    }
+
+
+}
