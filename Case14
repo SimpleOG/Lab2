@@ -1,0 +1,43 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{setlocale(LC_ALL, "RUS");
+ int n;
+ double a,r,R,S,x;
+ cout<<"Введите номер элемента"<<endl;
+ cin>>n;
+ cout<<"Введите длину элемента"<<endl;
+ cin>>x;
+ 	switch(n){
+case 1:
+    a=x;
+    r=a*sqrt(3)/6;
+    R=r*2;
+    S=a*a*sqrt(3)/4;
+    break;
+case 2:
+    r=x;
+    a=6*r/sqrt(3);
+    R=r*2;
+    S=a*a*sqrt(3)/4;
+    break;
+case 3:
+    R=x;
+    r=R/2;
+    a=6*r/sqrt(3);
+    S=a*a*sqrt(3)/4;
+    break;
+case 4:
+    S=x;
+    a=sqrt(sqrt(3)/4*S);
+    r=a*sqrt(3)/6;
+    R=r/2;
+    break;
+ 	}
+
+
+cout<<"Длина стороны равна: "<<a<<endl<<"Радиуc вписанной окружности равен: "<<r<<endl<<"Радиус описанной окружности равен: "<<R<<endl<<"Площадь равна: "<<S<<endl;}
