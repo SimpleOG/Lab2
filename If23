@@ -1,0 +1,33 @@
+#include <iostream>
+#include <clocale>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{
+	setlocale(LC_ALL, "RUS");
+   int x1, y1, x2, y2, x3, y3, a, b;
+   cout<<"Введите координаты прямоугольника"<<endl;
+cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+
+if (x1 == x2 ){
+     a = x3;}
+else if (x1 == x3){
+     a = x2;}
+else {
+     a = x1;}
+if (y1 == y2 ){
+    b = y3; }
+else if (y1 == y3)
+{
+     b = y2;}
+else {
+        b == y1;}
+
+cout <<"("<< a  << ", " << b<<")";
+
+return 0;
+
+
+}
